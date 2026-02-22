@@ -1,78 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Adarsh Trivedi | Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <img src="adarsh photo.jpeg"  alt="My Photo" class="profile-pic" />
-      <h1>Adarsh</h1>
-      <p>Web Developer | Programmer | Designer</p>
+
+<nav class="navbar">
+  <div class="logo">Adarsh.dev</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#industrial">Industrial Visit</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="image-wrapper">
+      <img src="adarsh photo.jpeg" alt="Adarsh" class="profile-pic">
     </div>
-  </header>
+    <h1>Adarsh Trivedi</h1>
+    <p class="subtitle"><span id="typing"></span></p>
+    <a href="#contact" class="btn">Let's Connect</a>
+  </div>
+</header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>I’m Adarsh Trivedi, a dedicated and curious learner with a strong interest in technology, programming, and 
-        creative problem-solving. I enjoy building projects, exploring new tools, and continuously improving my skills.
-My goal is to create impactful, user-friendly solutions while growing as a developer. I believe in consistent learning,
- clean work, and turning ideas into reality.</p>
-  </section>
-<section class="skills">
-  <h2>💻 Technical Skills</h2>
-    <ul>
-      <li>	Programming Languages: C, C++, Python (Basic), Java (Basic)</li>
-      <li>	Web Technologies: HTML, CSS, JavaScript</li>
-      <li>	Tools & IDEs: Android Studio, VS Code, Git, GitHub</li>
-      <li>	Databases: MySQL (Basic)</li>
-      <li>  Responsive Web Design</li>
-      <li>  Problem-Solving and Debugging</li>
-    </ul>
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+<p>
+I am a passionate and growth-oriented developer currently pursuing BCA. 
+I specialize in creating clean, responsive, and efficient web applications. 
+My core strengths include logical problem-solving, structured coding practices, 
+and a continuous desire to improve.
 
-
-<section class="projects">
-    <h2>Projects</h2>
-    <!--<div class="project-card">-->
-      
-
-<h3>1. Personal Portfolio Website</h3>
-<p>•	Developed a responsive portfolio website using HTML, CSS, and JavaScript.</p>
-<p>•	Displayed personal details, skills, and projects.</p>
-
-<p>•GitHub Link: https://github.com/adarsh-trivedi-123</p>
-<p>•Live Link: https://github.com/adarsh-trivedi-123/portfolio</p>
-
-<h3>2. Mini E-commerce Website</h3>
-<p>•	Created a basic e-commerce frontend with product listing pages.</p>
-<p>•	Focused on UI design and usability.</p>
-</h3>
-<h3>3. Beginner Android Application</h3>
-      <p>•	Designed a simple Android app using Android Studio.</p>
-       <p>•	Learned activity lifecycle and basic UI components.
+I believe in writing maintainable code, understanding system design fundamentals, 
+and building projects that reflect both functionality and creativity.
 </p>
-    </div>
-  </section>
-<section class="education">
-    <h2>Education</h2>
-    <ul>
-      <h3>Bachelor of Computer Application </h3> 
-        <p>Chhatrapati Shahu Ji Maharaj University (2024 - Present)</p>
-      
-    </ul>
-
-<section class="contact">
-<h2>Contact</h2>
-  <p>Phone: 9628058188</p>
-  <p>Email: adarshtrivedi696@gmail.com</p>
-  <p>GitHub: https://github.com/adarsh-trivedi-123</p>
+  </p>
 </section>
 
-  <footer>
-    <p>© 2025 Adarsh</p>
-  </footer>
+<section id="skills" class="section">
+  <h2>Tech Stack</h2>
+  <div class="grid">
+    <div class="card reveal">C / C++</div>
+    <div class="card reveal">Python</div>
+    <div class="card reveal">Java</div>
+    <div class="card reveal">HTML / CSS / JS</div>
+    <div class="card reveal">Git & GitHub</div>
+    <div class="card reveal">MySQL</div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="card reveal">
+    <h3>Portfolio Website</h3>
+    <p>Modern responsive developer portfolio.</p>
+  </div>
+
+  <div class="card reveal">
+    <h3>Mini E-Commerce</h3>
+    <p>Frontend UI focused e-commerce project.</p>
+  </div>
+
+  <div class="card reveal">
+    <h3>Android App</h3>
+    <p>Basic Android application using Android Studio.</p>
+  </div>
+</section>
+
+<section id="industrial" class="section">
+  <h2>Industrial Visit</h2>
+
+  <div class="card reveal">
+    <h3>Industrial Visit – HCLTech</h3>
+    <p>Lucknow | 2026</p>
+    <p>
+      • Gained exposure to corporate IT infrastructure and workflow systems.<br>
+      • Understood software development lifecycle in a real industry environment.<br>
+      • Learned about team collaboration and enterprise-level operations.
+    </p>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <h2>Education</h2>
+
+  <div class="card reveal">
+    <h3>BCA</h3>
+    <p>CSJMU (2024 - Present)</p>
+  </div>
+
+  <div class="card reveal">
+    <h3>12th (UP Board)</h3>
+    <p>2024</p>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Contact</h2>
+  <p>Phone: 9628058188</p>
+  <p>Email: adarshtrivedi696@gmail.com</p>
+  <p><strong>GitHub:</strong> github.com/adarsh-trivedi-123</p>
+</section>
+
+<footer>
+  © 2026 Adarsh Trivedi | Developer Portfolio
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
