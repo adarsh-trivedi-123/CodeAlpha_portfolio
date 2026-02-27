@@ -80,6 +80,8 @@ if(form){
         body: JSON.stringify({ name, email, message })
       });
 
+      console.log("Status Code:", response.status);
+
       const data = await response.json();
 
       if(response.ok){
@@ -91,6 +93,7 @@ if(form){
 
     }
     catch(error){
+      console.log("Fetch Error:", error);
       responseMsg.innerText = "Server not responding ❌";
     }
   });
